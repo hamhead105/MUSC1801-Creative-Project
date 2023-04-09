@@ -2446,7 +2446,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 0
   m_WaitForFirstFrame: 1
@@ -2801,6 +2801,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movieState: 0
+  intro: {fileID: 706623032}
+  interview1Video: {fileID: 1040132781}
+  montageVideo: {fileID: 878738505}
 --- !u!95 &797899918
 Animator:
   serializedVersion: 3
@@ -2868,7 +2871,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878738501}
   m_LocalRotation: {x: 0.0005680322, y: 0.70710665, z: -0.70710653, w: 0.0005679428}
-  m_LocalPosition: {x: -0.67, y: -0.176, z: 0.38}
+  m_LocalPosition: {x: -0.67, y: 0.08, z: 0.38}
   m_LocalScale: {x: 0.54, y: 0.43409175, z: 0.34}
   m_Children: []
   m_Father: {fileID: 304239213}
@@ -3022,7 +3025,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 0
   m_WaitForFirstFrame: 1
@@ -3592,7 +3595,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 0
   m_WaitForFirstFrame: 1
@@ -4590,7 +4593,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh20700
+  m_Name: pb_Mesh20792
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5009,7 +5012,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh20770
+  m_Name: pb_Mesh20862
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
