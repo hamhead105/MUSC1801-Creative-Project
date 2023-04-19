@@ -23,6 +23,20 @@ public class Director : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKey(KeyCode.L))
+        {
+            print("speed up");
+            Time.timeScale = 10f;
+            intro.playbackSpeed = 10f;
+            interview1Video.playbackSpeed = 10f;
+            montageVideo.playbackSpeed = 10f;
+        } else
+        {
+            Time.timeScale = 1f;
+            intro.playbackSpeed = 1f;
+            interview1Video.playbackSpeed = 1f;
+            montageVideo.playbackSpeed = 1f;
+        }
         // Intro 
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
