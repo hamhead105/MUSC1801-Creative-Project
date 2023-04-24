@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class DrawnProp : MonoBehaviour
 {
-    private Vector3 movement;
-    private int propNumber;
-    private float destroyAfter = 45f;
+    [SerializeField] private Vector3 movement;
+    [SerializeField] private int propNumber;
+    [SerializeField] private float destroyAfter = 45f;
 
     // Start is called before the first frame update
     void Start()
