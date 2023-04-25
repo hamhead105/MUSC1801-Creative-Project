@@ -16,13 +16,14 @@ public class DrawnProp : MonoBehaviour
 
     public void SetStats(Vector3 movement, int propNumber)
     {
-        GetComponent<Animator>().SetInteger("Prop Number", propNumber);
+        this.propNumber = propNumber;
         this.movement = movement;
     }
 
     // Update is called once per frame
     void Update()
     {
+        GetComponent<Animator>().SetInteger("Prop Number", propNumber);
         transform.Translate(movement * Time.deltaTime); 
     }
 }

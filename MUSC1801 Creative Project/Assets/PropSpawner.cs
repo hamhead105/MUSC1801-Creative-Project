@@ -40,6 +40,10 @@ public class PropSpawner : MonoBehaviour
             GameObject prop = Instantiate(spawnable, this.transform.position, transform.rotation);
             prop.transform.localScale = new Vector3(propScale.x, propScale.y, propScale.z);
             prop.GetComponent<DrawnProp>().SetStats(propMovement, spawnableProps[Random.Range(0,spawnableProps.Length)]);
+            if (GameObject.Find("What Kinda Music"))
+            {
+                prop.transform.parent = GameObject.Find("What Kinda Music").transform;
+            }
         }
     }
 }
