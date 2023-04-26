@@ -100,6 +100,12 @@ public class Director : MonoBehaviour
             movieState = 9;
         }
 
+        else if (Input.GetKeyDown(KeyCode.Alpha0))
+        {
+            stateAnimator.SetTrigger("UseSkip");
+            movieState = 10;
+        }
+
         if (hasFinishedFlag)
         {
             print("finish movie");
