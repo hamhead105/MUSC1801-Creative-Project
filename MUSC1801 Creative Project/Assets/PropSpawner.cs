@@ -20,9 +20,14 @@ public class PropSpawner : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
         InvokeRepeating("CheckSpawn", spawnFrequency, spawnFrequency);
+    }
+
+    void OnDisable()
+    {
+        CancelInvoke("CheckSpawn");
     }
 
     // Update is called once per frame
