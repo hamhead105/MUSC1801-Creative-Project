@@ -11,7 +11,10 @@ public class DrawnProp : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(gameObject, destroyAfter);
+        if (destroyAfter > 0)
+        {
+            Destroy(gameObject, destroyAfter);
+        }
     }
 
     public void SetStats(Vector3 movement, int propNumber)
