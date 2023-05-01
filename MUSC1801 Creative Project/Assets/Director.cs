@@ -14,6 +14,9 @@ public class Director : MonoBehaviour
 
     [SerializeField] private bool hasFinishedFlag;
 
+    private bool spaceSkipReady = true;
+    private float spaceSkipCooldown = 0.6f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -106,6 +109,14 @@ public class Director : MonoBehaviour
             movieState = 10;
         }
 
+        if (Input.GetKeyDown(KeyCode.Space) && spaceSkipReady)
+        {
+            stateAnimator.SetTrigger("UseSkip");
+            movieState++;
+            spaceSkipReady = false;
+            Invoke("RechargeSpaceSkip", spaceSkipCooldown);
+        }
+
         if (hasFinishedFlag)
         {
             print("finish movie");
@@ -116,6 +127,11 @@ public class Director : MonoBehaviour
 
         stateAnimator.SetInteger("DirectorState", movieState);
         UpdateVideoStates();
+    }
+
+    public void RechargeSpaceSkip()
+    {
+        spaceSkipReady = true;
     }
 
     private void UpdateVideoStates()
